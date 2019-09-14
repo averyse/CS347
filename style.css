@@ -1,0 +1,36 @@
+body {
+    height: 1000px;
+    background-color: #cccccc;
+    background-image: linear-gradient(lightpink, lightseagreen, blueviolet);
+}
+h1, h2, h3 {
+    color: lightseagreen;
+    /* font-size: 20px; */ 
+    font-weight: bold;
+    text-align: center;
+    font-family: "Stardust Adventure", "Delighter Script";
+}
+h1 {
+    text-transform: uppercase;
+    /*box-shadow: 10px 10px 8px blueviolet;*/
+}
+h1:hover {
+    box-shadow: 10px 10px 8px blueviolet;
+}
+p {
+    font-size: 18px;
+    line-height: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@font-face {
+    font-family: "Stardust Adventure", "Delighter Script";
+    src: url("/fonts/StardustAdventure.ttf") format("ttf"),
+    url("/fonts/Delighter.otf") format("otf");
+}
+table {
+    border-color: blueviolet;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: initial;
+}
