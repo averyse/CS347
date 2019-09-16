@@ -1,27 +1,65 @@
+@font-face {
+    font-family: StardustAdventure;
+    src: url('fonts/StardustAdventure.ttf');
+}
 body {
     height: 1000px;
     background-color: #cccccc;
-    background-image: linear-gradient(lightpink, lightseagreen, blueviolet);
+    background-image: linear-gradient(pink, plum, blueviolet);
+}
+.phoneImage {
+    transform: rotate(15deg);
+    float: right;
+}
+section {
+    display: none;
+    visibility: hidden;
+}
+.profile {
+    filter: grayscale(100%);
+}
+li {
+    display: block;
+}
+.nav {
+    list-style-type: circle;
+    list-style-position: outside;
+    list-style-image: none;
+}
+.interestNav li {
+    display: inline;
+    font-size: 20px;
+    padding: 20px;
+}
+.contactNav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
 }
 h1, h2, h3 {
-    color: lightseagreen;
-    /* font-size: 20px; */ 
+    color: white;
+    font-size: 50px;
+    visibility: visible;
     font-weight: bold;
-    text-align: center;
-    font-family: "Stardust Adventure", "Delighter Script";
+    text-align: left;
+    font-family: StardustAdventure, sans-serif;
+}
+#form {
+    background-image: linear-gradient(lightpink, plum);
+    border-image: url('borderImg.png') 30 round;
+    border-width: 10px;
 }
 h1 {
-    text-transform: uppercase;
-    /*box-shadow: 10px 10px 8px blueviolet;*/
+    text-transform: capitalize;
+    font-size: 100px;
+}
+img {
+    box-shadow: 10px 10px blueviolet;
+    border-radius: 10px;
+    object-fit: cover; 
 }
 h1:hover {
     box-shadow: 10px 10px 8px blueviolet;
-}
-p {
-    font-size: 18px;
-    line-height: normal;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 @font-face {
     font-family: "Stardust Adventure", "Delighter Script";
@@ -29,8 +67,34 @@ p {
     url("/fonts/Delighter.otf") format("otf");
 }
 table {
+    color: blueviolet;
     border-color: blueviolet;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: initial;
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 10px;
+    background-image: url('images/flowers.jpg');
+    background-clip: border-box;
+}
+.email-address:before {
+    content: "Email address: ";
+}
+img + p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    clear: both;
+}
+h1 ~ p {
+    line-height: normal;
+}
+ul > li {
+    list-style-type: circle;
+    list-style-position: outside;
+    list-style-image: none;
+}
+div p {
+    font-size: 18px;
+}
+p::first-letter {
+    font-size: large;
 }
