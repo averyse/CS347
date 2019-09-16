@@ -4,37 +4,7 @@
 }
 body {
     height: 1000px;
-    background-color: #cccccc;
     background-image: linear-gradient(pink, plum, blueviolet);
-}
-.phoneImage {
-    transform: rotate(15deg);
-    float: right;
-}
-section {
-    display: none;
-    visibility: hidden;
-}
-.profile {
-    filter: grayscale(100%);
-}
-li {
-    display: block;
-}
-.nav {
-    list-style-type: circle;
-    list-style-position: outside;
-    list-style-image: none;
-}
-.interestNav li {
-    display: inline;
-    font-size: 20px;
-    padding: 20px;
-}
-.contactNav li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
 }
 h1, h2, h3 {
     color: white;
@@ -44,27 +14,24 @@ h1, h2, h3 {
     text-align: left;
     font-family: StardustAdventure, sans-serif;
 }
-#form {
-    background-image: linear-gradient(lightpink, plum);
-    border-image: url('borderImg.png') 30 round;
-    border-width: 10px;
-}
 h1 {
     text-transform: capitalize;
     font-size: 100px;
+}
+h1:hover {
+    box-shadow: 10px 10px 8px blueviolet;
 }
 img {
     box-shadow: 10px 10px blueviolet;
     border-radius: 10px;
     object-fit: cover; 
 }
-h1:hover {
-    box-shadow: 10px 10px 8px blueviolet;
+li {
+    display: block;
 }
-@font-face {
-    font-family: "Stardust Adventure", "Delighter Script";
-    src: url("/fonts/StardustAdventure.ttf") format("ttf"),
-    url("/fonts/Delighter.otf") format("otf");
+section {
+    display: none;
+    visibility: hidden;
 }
 table {
     color: blueviolet;
@@ -75,8 +42,40 @@ table {
     background-image: url('images/flowers.jpg');
     background-clip: border-box;
 }
+.contactNav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
 .email-address:before {
     content: "Email address: ";
+}
+.interestNav li {
+    display: inline;
+    font-size: 20px;
+    padding: 20px;
+}
+.nav {
+    list-style-type: circle;
+    list-style-position: outside;
+    list-style-image: none;
+}
+.phoneImage {
+    transform: rotate(15deg);
+    float: right;
+}
+.profile {
+    filter: grayscale(100%);
+}
+#form {
+    background-image: linear-gradient(lightpink, plum);
+    border-image: url('/images/borderImg.png') 30 round;
+    border-width: 10px;
+}
+@font-face {
+    font-family: "Stardust Adventure", "Delighter Script";
+    src: url("/fonts/StardustAdventure.ttf") format("ttf"),
+    url("/fonts/Delighter.otf") format("otf");
 }
 img + p {
     white-space: nowrap;
